@@ -29,11 +29,11 @@ namespace ProjetoEstruturaDeRepeticaoVetor
                               "0. Sair \n" +
                               "1. Média de notas 10 alunos \n" +
                               "2. Vetor Inverso \n" +
-                              "3. Mostrar os números pares do vetor \n" +
+                              "3. Mostrar pares do vetor \n" +
                               "4. Média de 20 valores \n" +
-                              "5. \n" +
-                              "6. \n" +
-                              "7. \n" +
+                              "5. Quantidade de números pares \n" +
+                              "6. Mostrar Maior valor\n" +
+                              "7. Mostrar Menor valor\n" +
                               "8. \n" +
                               "9. \n" +
                               "10. \n" +
@@ -63,6 +63,16 @@ namespace ProjetoEstruturaDeRepeticaoVetor
                         break;
                     case 4:
                         Console.WriteLine(this.modelo.MediaVinte());
+                        break;
+                    case 5:
+                        this.modelo.ContPares();
+                        this.modelo.MostrarVetor5();
+                        break;
+                    case 6:
+                        this.modelo.MaiorValor();
+                        break;
+                    case 7:
+                        this.modelo.MenorValor();
                         break;
                     default:
                         Console.WriteLine("ERRO! Escolha uma opção válida.");
